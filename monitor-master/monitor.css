@@ -1,0 +1,100 @@
+main{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.monitor{
+    width: 14rem;
+    height: 10rem;
+    border: 1px solid black;
+    background: linear-gradient(rgb(116, 108, 108),rgb(36, 32, 32));
+    /* background-color: rgb(71, 63, 63); */
+    box-shadow: 0 0  0 50px  rgb(206, 198, 206);
+    position: relative;
+}
+.monitor::before{
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-image: url('power.png');
+    background-size: contain;
+    box-shadow: -2px 1px 2px gray;
+    position: absolute;
+    left: 83%;
+    top: 112%;
+
+}
+.monitor::after{
+    content: '';
+    width: 0.2rem;
+    height: 0.2rem;
+    border: 1.2px solid rgb(231, 31, 31);
+    background-color: rgb(231, 31, 31);
+    box-shadow: 2px 2px 1px gray;
+    border-radius: 50%;
+    position: absolute;
+    left: 77%;
+    top: 116%;
+}
+.btn{
+    width: 0.45rem;
+    height: 0.45rem;
+    border: 1.2px solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 115%;
+    left:12%;
+    box-shadow: 2px 2px 1px gray;
+}
+.btn::after{
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1.2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.8rem;
+    top:-0.1rem;
+    box-shadow: 2px 2px 1px gray;
+    
+    
+}
+.btn::before{
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1.2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.8rem;
+    top:-0.1rem;   
+    box-shadow: 2px 2px 1px gray;
+}
+.stand{
+    width:3rem;
+    height:6rem;
+    border: 2px solid rgb(26, 25, 25);
+    position: relative;
+    top: 9rem;
+    right:8.5rem;
+    border-radius: 0.2rem;
+    z-index: -1;
+    background-color: rgb(26, 25, 25);
+}
+.stand::after{
+    content: '';
+    width:9rem;
+    height:3rem;
+    border: 2px solid rgb(26, 25, 25);
+    position: absolute;
+    top:4.2rem;
+    left: -3.1rem;
+    border-radius: 70%;
+    z-index: -2;
+    background-color: rgb(26, 25, 25);
+    
+}
